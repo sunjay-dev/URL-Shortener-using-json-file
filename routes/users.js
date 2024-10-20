@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { CreateCustomUrl } = require('../controllers/CreateCustomUrl.js');
+const { CreateCustomUrl } = require('../controllers/createCustomUrl.js');
 const { getDetails } = require('../controllers/getDetails.js');
 const { redirectUrl } = require('../controllers/redirectUrl.js');
 const { createUrl } = require('../controllers/createUrl.js');
