@@ -4,7 +4,6 @@ const { CreateCustomUrl } = require('../controllers/CreateCustomUrl.js');
 const { getDetails } = require('../controllers/getDetails.js');
 const { redirectUrl } = require('../controllers/redirectUrl.js');
 const { createUrl } = require('../controllers/createUrl.js');
-const path = require('path');
 
 const router = express.Router();
 
