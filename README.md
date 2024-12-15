@@ -60,7 +60,7 @@ The application provides the following routes:
   - Returns a JSON object containing the shortened URL with the custom alias.
   - If the custom alias is already in use, returns an 409 error message.
 
-### GET `/details?url=shortId`
+### GET `/api/details?url=shortId`
 - **Description**: Provides details about shortened url.
 - **Parameters**:
   - `shortId`: The short ID of the URL to retrieve.
