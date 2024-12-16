@@ -1,9 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-
 const dataFilePath = path.join(__dirname, '../data/data.json');
 
-function redirectUrl (req,res){
+function redirectUrl (req,res, next){
 
     let found = false;
 
@@ -48,7 +47,7 @@ function redirectUrl (req,res){
         return res.status(500).json({error: "Internal server error"});
     }
     if (!found) {
-        res.status(404).sendFile(path.join(__dirname,"../public", "404.html"));
+        next();
     }
 }
 
